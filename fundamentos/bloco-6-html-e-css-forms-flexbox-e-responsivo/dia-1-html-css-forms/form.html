@@ -5,12 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <fieldset>
-        
-    </fieldset>
+    <form action="" method="get" class="personal-data" enctype="multipart/form-data">
+        <fieldset id="fieldset-1">
+            <label for="full-name">
+                <input id="full-name" type="text" name="full-name" value="" placeholder="Name" maxlength="40" required>
+            </label>
+            <br>
+            <label for="email">
+                <input id="email" type="email" placeholder="E-mail" maxlength="">
+            </label>
+            <br>
+            <label for="cpf">
+                <input id="cpf" type="text" placeholder="CPF" maxlength="11" required>
+            </label>
+            <br>
+            <label for="address">
+                <input id="address" type="text" placeholder="address" required maxlength="200">
+            </label>
+            <br>
+            <label for="city">
+                <input id="city" type="text" placeholder="City" maxlength="28" required>
+            </label>
+            <br>
+            <label for="state">State where you live:
+                <select id="state" type="select" placeholder="State" required></select>
+            </label>
+            <br>
+            <label for="place-type">
+                <input type="radio" name="place-type" id="">Casa
+                <input type="radio" name="place-type" id="">Apartamento
+                </label>  
+        </fieldset>
+            
+        <fieldset id="fieldset-2">
+
+        </fieldset>
+    </form>
+    <div class="preventButton"></div>
 </body>
 <script src="script.js"></script>
 </html>
