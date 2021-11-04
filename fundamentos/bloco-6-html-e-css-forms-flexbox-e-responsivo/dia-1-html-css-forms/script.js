@@ -69,20 +69,21 @@ let stateSimbol = [
     'TO'
 ];
 
+
+
 for (let i = 0; i < stateList.length; i += 1) {
   let state = stateList[i];
   let option = document.createElement("option");
   option.innerText = state;
   option.className = 'options';
-
-  for (let i = 0; i < stateSimbol.length; i += 1) {
-    const simbol = array[i];
-    option.value = 'simbol';
-    
-  }
-
   optStates.appendChild(option);
 }
 
+for (let i = 0; i < stateSimbol.length; i += 1) {
+    const simbol = stateSimbol[i];
+    const option = document.querySelector('.options');
 
+    option.value = simbol;
 
+    optStates.appendChild(option);
+}
