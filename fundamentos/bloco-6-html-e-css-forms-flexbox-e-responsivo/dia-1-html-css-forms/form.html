@@ -7,11 +7,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+<header><h1>FORMULÁRIO DE CURRÍCULO</h1></header>
 <body>
     <form action="" method="get" class="personal-data" enctype="multipart/form-data">
         <fieldset id="fieldset-1">
             <label for="full-name">
-                <input id="full-name" type="text" name="full-name" value="" placeholder="Name" maxlength="40" required>
+                <input id="full-name" type="text" name="Nome" value="" placeholder="Nome completo" maxlength="40" required>
             </label>
             <br>
             <label for="email">
@@ -23,28 +24,43 @@
             </label>
             <br>
             <label for="address">
-                <input id="address" type="text" placeholder="address" required maxlength="200">
+                <input id="address" type="text" placeholder="Endereço" required maxlength="200">
             </label>
             <br>
             <label for="city">
-                <input id="city" type="text" placeholder="City" maxlength="28" required>
+                <input id="city" type="text" placeholder="Cidade" maxlength="28" required>
             </label>
             <br>
-            <label for="state">State where you live:
+            <label for="state">Estado onde você vive:
                 <select id="state" type="select" placeholder="State" required></select>
             </label>
             <br>
             <label for="place-type">
                 <input type="radio" name="place-type" id="">Casa
                 <input type="radio" name="place-type" id="">Apartamento
-                </label>  
+            </label>  
         </fieldset>
             
         <fieldset id="fieldset-2">
-
+            <p>Resumo do currículo</p>
+            <label for="currículo">
+                <textarea name="currículo" id="curriculo" cols="30" rows="10" maxlength="1000" required></textarea>
+            </label>
+            <p>Cargo</p>
+            <label for="cargo">
+                <textarea name="cargo" id="cargo" cols="30" rows="10" maxlength="500" required></textarea>
+            </label>
+            <p>Descrição do cargo requerido:</p>
+            <label for="descrição-cargo">
+                <textarea name="descrição-cargo" id="descargo" cols="30" rows="10" maxlength="500" required></textarea>
+            </label>
+            <label for="data">
+                <input type="date" name="data" id="data-inicio" required>Data de início
+            </label>
         </fieldset>
     </form>
     <div class="preventButton"></div>
+    <div id="visual"></div>
 </body>
 <script src="script.js"></script>
 </html>
